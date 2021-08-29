@@ -26,6 +26,7 @@ const SignupForm = () => {
     // check if form has everything (as per react-bootstrap docs)
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
+      console.log('Invalid form')
       event.preventDefault();
       event.stopPropagation();
     }
@@ -35,6 +36,7 @@ const SignupForm = () => {
         variables: userFormData});
 
       if (error) {
+        console.log(error.message)
         throw new Error('something went wrong!');
       }
       console.log(data)
