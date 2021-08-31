@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 // import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ApolloClient from 'apollo-boost';
+import './App.css'
 
 const client = new ApolloClient({
   request: operation => {
