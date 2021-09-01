@@ -1,7 +1,8 @@
 {
-    "name": "GooBook",
+    "name": "book-look-nook",
     "version": "1.0.0",
     "description": "",
+    "homepage":"https://book-look-nook.herokuapp.com/",
     "main": "server/server.js",
     "scripts": {
         "start": "node server/server.js",
