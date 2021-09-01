@@ -55,7 +55,7 @@ const SearchBooks = () => {
         authors: book.volumeInfo.authors || ['No author to display'],
         title: book.volumeInfo.title,
         description: book.volumeInfo.description,
-        image: book.volumeInfo.imageLinks?.thumbnail || '',
+        image: book.volumeInfo.imageLinks?.thumbnail || 'https://icecube-us-302.icedrive.io/thumbnail?p=rWna68PYGGJ6kwullDi58xJM8wi21wtQ44BuzB8Bp8N5ydLm1FbTK2Pxwl%2Bo3k6f8pDh1P9RacI7zzocCcbmG0wCgVrTj4qSfvwHei9zYDEPlDd%2FmcklVSr640NkMTud&w=1280&h=1280&m=cropped',
       }));
 
       setSearchedBooks(bookData);
@@ -94,7 +94,7 @@ const SearchBooks = () => {
       <Jumbotron fluid className='text-light bg-dark'>
         <Container>
           <h1>Search for Books!</h1>
-          <Form onSubmit={handleFormSubmit}>
+          <Form className="searchForm" onSubmit={handleFormSubmit}>
             <Form.Row>
               <Col xs={12} md={8}>
                 <Form.Control
@@ -104,7 +104,7 @@ const SearchBooks = () => {
                   type='text'
                   size='lg'
                   placeholder='Search for a book'
-                />
+                  />
               </Col>
               <Col xs={12} md={4}>
                 <Button type='submit' variant='success' size='lg'>
@@ -117,11 +117,11 @@ const SearchBooks = () => {
       </Jumbotron>
 
       <Container>
-        <h2>
+        
           {searchedBooks.length
-            ? `Viewing ${searchedBooks.length} results:`
-            : 'Search for a book to begin'}
-        </h2>
+            ? <h2>Viewing {searchedBooks.length} results:</h2>
+            : <h2 className='default'>Search for a book to begin</h2>}
+    
         <CardColumns>
           {searchedBooks.map((book) => {
             return (

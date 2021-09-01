@@ -29,6 +29,42 @@
   --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
+html{
+  width:100%;
+  height:100%;
+  background-color:var(--dark)
+}
+#root{
+  background-color: var(--dark);
+}
+
+.jumbotron {
+  background-image: url('https://get.wallhere.com/photo/modern-library-scale-model-interior-design-plan-Stuttgart-design-urban-design-94973.jpg');
+  background-size: cover;
+  margin-bottom:.25rem !important;
+  /* text-align:center; */
+}
+.jumbotron .container{
+  width: 100% !important;
+  flex-flow: row wrap;
+  background-color: unset;
+  box-shadow: unset;
+}
+.searchForm{
+  width: 60%;
+  margin: auto 20%;
+}
+
+.form-control-lg{
+  box-shadow: 0 0 10px rgba(0,0,0,.8);
+}
+.jumbotron .container h1{
+  flex:0 0 100%;
+  font-size: 3rem;
+  color:rgb(255, 255, 255);
+  font-variant: small-caps;
+  text-shadow: 3px 5px 15px rgb(0, 0, 0), 3px 5px 15px rgb(0, 0, 0),0 0 7px rgb(133, 28, 115) ;
+}
 .card-text{
   height: 200px;
   overflow: auto;
@@ -37,8 +73,30 @@
   color: white;
 }
 .container{
-  max-width: 90%;
-  margin: 0 5%;
+  background-color:rgb(255, 255, 255);
+  max-width: 95% !important;
+  margin: 0 2.5% !important;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.75);
+  transition: 0.3s;
+}
+.border-dark{
+  transition: 0.3s ease-in-out
+}
+.card.border-dark:hover{
+  box-shadow: 0 4px 10px 0 rgba(10, 10, 10, 0.8);
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.default{
+  padding:5rem;
 }
 /* 
 .card{

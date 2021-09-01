@@ -72,7 +72,7 @@ const SavedBooks = () => {
       <Container>
         <h2>
           {userDataLength
-            ? `Viewing ${userData.savedBooks.length} saved ${
+            ? `Your Collection of ${userData.savedBooks.length} ${
                 userData.savedBooks.length === 1 ? 'book' : 'books'
               }:`
             : 'You have no saved books!'}
