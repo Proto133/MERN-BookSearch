@@ -18,8 +18,8 @@ const client = new ApolloClient({
       }
     })
   },
-  uri: 'http://localhost:3001/graphql',
-  // uri: '/graphql'
+  // uri: 'http://localhost:3001/graphql',
+  uri: '/graphql'
 });
 
 
