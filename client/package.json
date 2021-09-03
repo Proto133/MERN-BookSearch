@@ -2,7 +2,6 @@
   "name": "book-look-nook-client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://book-look-nook.herokuapp.com/client",
   "dependencies": {
     "@apollo/client": "^3.4.10",
     "@apollo/react-hooks": "^4.0.0",
