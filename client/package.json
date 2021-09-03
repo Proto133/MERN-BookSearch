@@ -2,7 +2,7 @@
   "name": "book-look-nook-client",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://book-look-nook.herokuapp.com/",
+  "homepage": "https://book-look-nook.herokuapp.com/",
   "dependencies": {
     "@apollo/client": "^3.4.10",
     "@apollo/react-hooks": "^4.0.0",
@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^12.1.10",
     "apollo-boost": "^0.4.9",
     "bootstrap": "^4.4.1",
+    "graphql": "^15.5.2",
     "jwt-decode": "^2.2.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.0.1",
