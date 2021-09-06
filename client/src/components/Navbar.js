@@ -16,7 +16,7 @@ const AppNavbar = () => {
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
           <img
-        alt=""
+        alt="Book Look Nook icon"
         src="/logo192.png"
         width="30"
         height="30"
