@@ -15,7 +15,14 @@ const AppNavbar = () => {
       <Navbar bg='dark' variant='dark' expand='lg'>
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
-            Google Books Search
+          <img
+        alt=""
+        src="/logo192.png"
+        width="30"
+        height="30"
+               className="d-inline-block align-top"
+      />{' '}
+             Book Look Nook:
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
